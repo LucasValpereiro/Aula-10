@@ -17,6 +17,7 @@
         visibility: hidden;
         transition: all 0.3s ease-in-out;
         pointer-events: none;
+        filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
       }
 
       .dropdown:hover .dropdown-menu{
@@ -24,6 +25,7 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
       }
 
       .menu-link {
@@ -38,6 +40,11 @@
         transition: transform 0.3s ease;
       }
     </style>
+
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -65,11 +72,8 @@
           <button class="menu-link text-gray-700
            hover:text-blue-600 px-4 py-2 rounded-md
            text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
-
-           <svg class="arrow ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-
-           </svg>
             Serviços
+            <i class="ri-arrow-down-s-line arrow ml-2"></i>
           </button>
         </div>
          </nav>
