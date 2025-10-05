@@ -20,6 +20,17 @@
         filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
       }
 
+      /* Invisible area for the submenus to stay responsive when user takes time to pick */
+      .dropdown-menu::before{
+        content: '';
+        position: absolute;
+        top: -18px;
+        left: 0;
+        right: 0;
+        height: 18px;
+        background: transparent;
+      }
+
       .dropdown:hover .dropdown-menu{
         transform: translateY(0);
         opacity: 1;
@@ -47,6 +58,8 @@
       .submenu-item:hover{
         transform: translateX(5px);
       }
+
+      /* Animation Header */
 
       header {
         transition: all 0.3s ease;
@@ -141,7 +154,7 @@
            from-blue-600 to-purple-600 bg-clip-text text-transparent
 
            hover:from-purple-600 hover:to-blue-600
-          transition-all duration-300 cursor-pointer ">serviços</span>" e veja a mágica acontecer.
+          transition-all duration-300 cursor-pointer">serviços</span>" e veja a mágica acontecer.
         </p>
       </div>
     </main>
